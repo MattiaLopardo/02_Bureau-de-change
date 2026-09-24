@@ -41,5 +41,12 @@ int main() {
 
     cout << "Somme CHF : " << francs << ", Solde compte : " << restcompte << endl;
 
+    int size = 10;
+    for (int rows=0;rows!=size;rows++) {
+        for (int cols=0;cols!=size;cols++) {
+            if (rows==0 || rows==size-1 || cols==0 || cols==size-1) cout << "-";
+        }
+    }
+
     return EXIT_SUCCESS;
 }
